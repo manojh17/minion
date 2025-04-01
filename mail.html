@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Surprise Her 2.0 | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <title>Surprise Her 2.0 | Aoudumber Bade</title>
+    <link rel="website icon" type="png" href="image/gift3.gif">
+    <link rel="stylesheet" href="mail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>To You!</title>
+</head>
+<body>
+    
+    <div class="warpper preloading">
+        
+        <div class="box">
+            
+            <div class="mail">
+                
+                <div class="heart">
+                    <img src="image/heart.png" alt="">
+                    <img src="image/heart.png" alt="">
+                    <img src="image/heart.png" alt="">
+                    <img src="image/heart.png" alt="">
+                    <img src="image/heart.png" alt="">
+                </div>
+                
+                <div class="content">
+                   
+                    
+                    <div class="title">
+                        <h2>To You!</h2>
+                    </div>
+                    
+                    <p>
+                        Happiest Birthday, Kuttyyyyyyyy Killlerrrrr! 💗💗
+
+                        My pangu,my kutty killer,my minion partner, my biggest headache, my dearest torture machine—yet the one person I’d never want to be without! 🎉💖 ,you’ve been more than just a friend; you are a constant, an unshakeable bond that no time or distance can break.
+                        
+                        Yes, we argue. Yes, we annoy each other. Yes, I might ignore you out of stubbornness… but guess what? Nee epovum en heart'la iruka pora!
+                        
+                        You’re one of the person who tolerate me when I make no sense atrocities, and listens to my endless nonsense (seriously, how do you survive? 😂). And I promise, I’ll always be here for your rants, your laughter, and even your worst decisions—because that’s what best friends do!
+                        
+                        Surya is mine and mine alone nu sola maten but Naa nee enku dhan nu dhan nadandhupen 😂
+                        Pudichalum seri pudikalanalum seri, idhu aprm enaiya vechi salichiko you have no choice 
+                        
+                        
+                        Wishing you a day as amazing, chaotic, and full of life as you are! Enjoy every second of your special day, because you deserve nothing less than the best. Love you loads, my forever cutekutti queen! 🫂❤
+                        
+                        Nalika naan nalla yosichhi unaku oru compliment tharen
+                    </p>
+                    
+                    <div class="gifs_left">
+                        <img id="heart__letter" src="./shine/20.jpg" style="border-radius: 50% ;width: 150px;" class="animationOp">
+                    </div>
+                    
+                    <div class="gifs_right">
+                        <img id="heart__letter" src="./shine/22.jpg" alt="" class="animationOp">
+                    </div>
+                    
+                </div>
+                
+              
+            </div>
+        </div>
+        <div class="loader-wrapper">
+            <div class="loader">
+                <div class="inner one" style="--i:1;"></div>
+                <div class="inner two" style="--i:1;"></div>
+                <div class="inner three" style="--i:1;"></div>
+                <div class="box-heart">
+                    <div class="heartLoader"></div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="imge">
+    <img src="./shine/2.jpg" alt="Random Image 1" class="image random1">
+    <img src="./shine/3.jpg" alt="Random Image 2" class="image random2">
+    <img src="./shine/4.jpg" alt="Random Image 3" class="image random3">
+    <img src="./shine/5.jpg" alt="Random Image 4" class="image random4">
+    <img src="./shine/6.jpg" alt="Random Image 5" class="image random5">
+    <img src="./shine/7.jpg" alt="Random Image 6" class="image random6">
+    <img src="./shine/8.jpg" alt="Random Image 7" class="image random7">
+    <img src="./shine/9.jpg" alt="Random Image 8" class="image random8">
+    <img src="./shine/10.jpg" alt="Random Image 9" class="image random9">
+    <img src="./shine/11.jpg" alt="Random Image 10" class="image random10">
+    <img src="./shine/12.jpg" alt="Random Image 11" class="image random1">
+    <img src="./shine/13.jpg" alt="Random Image 12" class="image random2">
+    <img src="./shine/14.jpg" alt="Random Image 13" class="image random3">
+    <img src="./shine/15.jpg" alt="Random Image 14" class="image random4">
+    <img src="./shine/16.jpg" alt="Random Image 15" class="image random5">
+    <img src="./shine/17.jpg" alt="Random Image 16" class="image random6">
+    <img src="./shine/18.jpg" alt="Random Image 17" class="image random7">
+    <img src="./shine/19.jpg" alt="Random Image 18" class="image random8">
+    <img src="./shine/22.jpg" alt="Random Image19" class="image random9">
+    <img src="./shine/21.jpg" alt="Random Image 10" class="image random10">
+</div>
+    
+    
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(window).on('load', function(event){
+        $('body').removeClass('preloading');
+        $('.loader-wrapper').delay(1000).fadeOut('fast');
+    });
+    const images = document.querySelectorAll('.image');
+let currentImageIndex = 0;
+
+function changeImage() {
+    images.forEach((img, index) => {
+        img.style.opacity = '0';
+    });
+    images[currentImageIndex].style.opacity = '1';
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+setInterval(changeImage, 1000); // Change image every 3 seconds
+    </script>
+</html>
