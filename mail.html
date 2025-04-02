@@ -13,6 +13,11 @@
     <title>To You!</title>
 </head>
 <body>
+    <audio id="bgMusic" loop>
+    <source src="./song.mp3" type="audio/mp3">
+</audio>
+
+
     
     <div class="warpper preloading">
         
@@ -121,5 +126,10 @@ function changeImage() {
 }
 
 setInterval(changeImage, 1000); // Change image every 3 seconds
+        
+    window.addEventListener('load', function () {
+        let audio = document.getElementById("bgMusic");
+        audio.play().catch(error => console.log("Autoplay blocked. User interaction required."));
+    });
     </script>
 </html>
